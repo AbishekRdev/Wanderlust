@@ -1,23 +1,91 @@
 <%-layout('/layouts/boilerplate')%>
-<body>
+<div id="filters">
+
+
+
+  <div class="filter">
+    <div><i class="fa-solid fa-mountain-sun"></i></div>
+    <p>Mountain</p>
+  </div>
+
+
+  <div class="filter">
+    <div><i class="fa-solid fa-water-ladder"></i></div>
+    <p>Pool</p>
+  </div>
+
+  <div class="filter">
+    <div><i class="fa-solid fa-cow"></i></div>
+    <p>Farm</p>
+  </div>
+
+
+
+  <div class="filter">
+    <div><i class="fa-solid fa-person-hiking"></i></div>
+    <p>Hike</p>
+  </div>
+
+
+
+
+  <div class="filter">
+    <div><i class="fa-solid fa-snowflake"></i></i></div>
+    <p>Winter</p>
+  </div>
+
+
+  <div class="filter">
+    <div><i class="fa-solid fa-tree"></i></div>
+    <p>Park</p>
+  </div>
+
+
+  <div class="filter">
+    <div><i class="fa-solid fa-ticket"></i></div>
+    <p>ICONS</p>
+  </div>
+
+
+
+
+  <div class="filter">
+    <div><i class="fa-solid fa-campground"></i></div>
+    <p>Campfire</p>
+  </div>
+
+  <div class="navbar-nav  filter searchcontainer " style="opacity:1; ">
+ 
+    <div style="display: flex; justify-content: center;">
+      <input class="form-control me-2 Search" id="search" type="search" placeholder="Search Destinations" oninput="Search()"   aria-label="Search">
     
-    <h2>All listings </h2>
+    </div>
+    
+  </div>
+
+  
+  
 
 
-    <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+
+</div>
+    
+   
+    <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1  listing-container ">
+
 
     <% for(let list of allListings){%>
 
    
 
-     <a href="/listings/<%=list.id%>">
-        <div class="card col listing-card">
-            <img src="<%= list.image %>" class="card-img-top" alt="..load">
+     <a class="Sitem" href="/listings/<%=list.id%>">
+        <div class="card col  listing-card">
+            <img src="<%= list.image.url %>" class="card-img-top" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" alt="..load">
             <div class="card-img-overlay"></div>
             <div class="card-body">
     
-              <p class="card-text">
-                <b><%= list.title %></b><br>
+              <p class="card-text ">
+                <b class="Scard-title"><%= list.title %></b><br>
                &#8377;<%= (list.price ? list.price.toLocaleString("en-IN") : "Not available") %> / night<br>
             </p>
               
@@ -25,12 +93,15 @@
           </div>
 
 
-    
+        </a>
         <% } %>
+    
    
-     </a>
+   
+     
             
 
     </div>
 
-</body>
+    <script src="/js/searchlisting.js"></script>
+

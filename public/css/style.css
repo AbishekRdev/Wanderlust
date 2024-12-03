@@ -9,6 +9,7 @@ body{
     flex:1;
 }
 
+
  
 .navbar{
 
@@ -39,17 +40,21 @@ body{
 }
 
 .f-info-links,.f-info-socials{
+    cursor: pointer;
     width:100%;
 }
 
 .f-info-socials i{
     margin-right:1rem;
-    font-size:1.2rem;
+    font-size:1.3rem;
+    
 }
 .f-info{
+    
     text-align: center;
     background-color: #ebebeb;
     height:7rem;
+  
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -105,9 +110,15 @@ a{
     background-color: #fe424d;
     border:none;
 }
+.add-btn:hover{
+    color:white;
+    background-color: #fe424d;
+    border:none;
+}
 
  
 .show-card{
+
 
     padding:0;
     
@@ -123,3 +134,68 @@ a{
    justify-content: space-between;
 
   }
+
+
+  /* maps */
+  #map {
+
+   height: 400px;
+    width: 80vh;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     
+
+    
+    
+
+}
+
+.navbar-collapse {
+    background-color: white !important; 
+     z-index: 1050;
+
+  }
+.airnb:hover{
+    color:#fe424d;
+
+}
+
+
+
+/* filters  */
+
+
+
+#filters{
+    display:flex;
+    flex-wrap: wrap;
+   
+  
+  }
+  .filter{
+    text-align: center;
+    margin:2rem;
+    opacity:0.7;
+    cursor: pointer;
+
+  }
+
+  .filter:hover{
+    color:#fe424d;
+    opacity:1;
+  }
+
+  .Sitem {
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+/* search */
+.Search{
+ 
+    border-radius:25px;
+    padding:0.5rem 3rem 0.5rem 3rem;
+ 
+    
+}
+

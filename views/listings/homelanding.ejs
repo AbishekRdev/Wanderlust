@@ -1,0 +1,77 @@
+<%-layout('/layouts/boilerplate')%>
+
+
+
+
+
+<link rel="stylesheet" href="/css/homelanding.css">
+    <div class="cbox">
+
+   
+
+    <div class="wordbox">
+        <h1 style="font-size: 4rem;"><b>Your home could make ₹18,387 per month on <b class="log">Wonderlust</b></b></h1>
+
+    </div>
+
+         <div  class="hmap" id="map"></div>
+
+
+          <div class="wordbox2">
+            <h1 style="font-size: 3rem;"> Its easier than ever to list your propertiers  on <b class="log">Wonderlust</b></h1>
+    
+        </div>
+        
+      
+
+
+
+
+ 
+
+
+
+
+
+    <img class="mokup"  src="https://res.cloudinary.com/dxxowqvc9/image/upload/v1733226152/apple_oxltpl.png" alt="">
+
+    <h1 style="font-size: 3rem;"> What are you waiting for ? Go <b class="log">list your Retreat</b> </h1>
+    <br><br><br>
+
+    <a href="/listings"><button class="start-now-btn position">Start Now</button></a>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+    <script>
+
+    let mapApiKey= "<%= process.env.MAP_API_KEY%>";
+    maptilersdk.config.apiKey = mapApiKey;
+    const map = new maptilersdk.Map({
+    container: 'map',
+    style: maptilersdk.MapStyle.STAMEN_WATERCOLOR,
+    center: [-60.66232752089503, -32.9612955651252],
+    zoom: 13,
+     });
+     map.on('load', function() {
+    // Manually remove the zoom control elements if they still appear
+    const zoomControl = map.getZoomControl();
+    if (zoomControl) {
+        zoomControl.remove();
+    }
+   });
+
+  const marker = new maptilersdk.Marker()
+  .setLngLat( [-60.66232752089503,-32.9612955651252])
+  .addTo(map);
+    </script>

@@ -1,0 +1,116 @@
+
+    
+    .wordbox{
+        
+        width:20rem;
+        display:flex;
+        flex-wrap: wrap;
+
+    }
+    .mokup{
+
+
+        
+       margin: 0  20rem 10rem 10rem;
+        width:60%;
+
+        
+    }
+    #map{
+        height:600px;
+        width:600px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        
+    }
+
+    .hmap{
+        
+        
+        width:100%;
+        border-radius:25px;
+
+    }
+    .cbox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top:5rem;
+    }
+    .wordbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .wordbox2{
+
+        margin-top:25rem;
+        width:100%;
+
+
+
+    }
+    .log{
+        color: #fe424d;
+    }
+
+
+    .start-now-btn {
+        margin-bottom:20rem;
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        transition: box-shadow 0.15s ease, transform 0.15s ease;
+        will-change: box-shadow, transform;
+        background: #FCFCFD; /* Default background color */
+        color:#fe424d;
+        box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+        height: 48px;
+        padding: 0 32px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 6px;
+        text-align: center;
+        line-height: 48px; /* Vertically center text */
+        text-transform: uppercase; /* Capitalize the text */
+    }
+    
+    /* Hover effect */
+    .start-now-btn:hover {
+        box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+        transform: translateY(-2px);
+    }
+    
+    /* Active (click) effect */
+    .start-now-btn:active {
+        box-shadow: inset 0px 3px 7px #d6d6e7;
+        transform: translateY(2px);
+    }
+    
+
+        /* Hover effect */
+        .start-now-btn:hover {
+            box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+            transform: translateY(-2px);
+        }
+
+        /* Active (click) effect */
+        .start-now-btn:active {
+            box-shadow: inset 0px 3px 7px #d6d6e7;
+            transform: translateY(2px);
+        }
+
+        /* .position{
+            position: relative;
+            right:15rem;
+        } */
+
+
+   
+    
+
+
+
