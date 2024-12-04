@@ -38,7 +38,16 @@
     <h1 style="font-size: 3rem;"> What are you waiting for ? Go <b class="log">list your Retreat</b> </h1>
     <br><br><br>
 
-    <a href="/listings"><button class="start-now-btn position">Start Now</button></a>
+
+    
+    
+
+
+    <%if(curUser){%>
+    <a href="/listings"><button class="start-now-btn position">Start</button></a>
+    <% } else { %>
+    <a href="/signup"><button class="start-now-btn position">Signup</button></a>
+     <% } %>
 
 
 
